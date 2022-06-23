@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0f0660c4-613c-4831-a5c0-af29fcbeab06}</ProjectGuid>
+    <RootNamespace>CPP20</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Voxy</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AppWindow.cpp" />
+    <ClCompile Include="Game\BlockInteractor.cpp" />
+    <ClCompile Include="Game\Components.cpp" />
+    <ClCompile Include="Game\Component\CameraComponent.cpp" />
+    <ClCompile Include="Game\Component\ColliderComponent.cpp" />
+    <ClCompile Include="Game\Component\ComponentTickHandler.cpp" />
+    <ClCompile Include="Game\Component\HealthComponent.cpp" />
+    <ClCompile Include="Game\Component\MeshComponent.cpp" />
+    <ClCompile Include="Game\Component\ParticleSystemComponent.cpp" />
+    <ClCompile Include="Game\Component\RigidBodyComponent.cpp" />
+    <ClCompile Include="Game\Component\RotatingComponent.cpp" />
+    <ClCompile Include="Game\Component\ScriptComponent.cpp" />
+    <ClCompile Include="Game\Component\TransformComponent.cpp" />
+    <ClCompile Include="Game\Component\UIComponent.cpp" />
+    <ClCompile Include="Game\Entity.cpp" />
+    <ClCompile Include="Game\EntityRegister.cpp" />
+    <ClCompile Include="Game\GameUI.cpp" />
+    <ClCompile Include="Game\GameWorld.cpp" />
+    <ClCompile Include="Game\Item.cpp" />
+    <ClCompile Include="Game\ParticleSystem.cpp" />
+    <ClCompile Include="Game\PlayerController.cpp" />
+    <ClCompile Include="Graphics\BufferUtils.cpp" />
+    <ClCompile Include="Graphics\Framebuffer.cpp" />
+    <ClCompile Include="Graphics\Renderer\ChunkRenderer.cpp" />
+    <ClCompile Include="Graphics\Renderer\MeshRenderer.cpp" />
+    <ClCompile Include="Graphics\Renderer\ParticleRenderer.cpp" />
+    <ClCompile Include="Graphics\Renderer\Renderer.cpp" />
+    <ClCompile Include="Graphics\Shader.cpp" />
+    <ClCompile Include="Graphics\StandardMesh.cpp" />
+    <ClCompile Include="Graphics\Texture.cpp" />
+    <ClCompile Include="Graphics\UI\UIElement.cpp" />
+    <ClCompile Include="Graphics\VertexMesh.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Physics\ChunkPhysics.cpp" />
+    <ClCompile Include="Physics\IntersectionTests.cpp" />
+    <ClCompile Include="Sandbox\TestApp.cpp" />
+    <ClCompile Include="Sandbox\VoxyApp.cpp" />
+    <ClCompile Include="Utility\FileIO.cpp" />
+    <ClCompile Include="Utility\GameController.cpp" />
+    <ClCompile Include="Utility\KeyboardController.cpp" />
+    <ClCompile Include="Utility\MathUtility.cpp" />
+    <ClCompile Include="Utility\ShaderLibrary.cpp" />
+    <ClCompile Include="Utility\TextureLibrary.cpp" />
+    <ClCompile Include="Utility\ThreadRunnable.cpp" />
+    <ClCompile Include="Utility\TickDispatcher.cpp" />
+    <ClCompile Include="World\Biome.cpp" />
+    <ClCompile Include="World\Block.cpp" />
+    <ClCompile Include="World\Chunk.cpp" />
+    <ClCompile Include="World\ChunkManager.cpp" />
+    <ClCompile Include="World\ChunkMap.cpp" />
+    <ClCompile Include="World\Generator.cpp" />
+    <ClCompile Include="World\WorldGenerator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\External\External.vcxproj">
+      <Project>{20cf3ccd-e830-4240-a32a-c3e7ac2afd5d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppWindow.h" />
+    <ClInclude Include="CoreTypes.h" />
+    <ClInclude Include="Game\BlockInteractor.h" />
+    <ClInclude Include="Game\Components.h" />
+    <ClInclude Include="Game\Component\CameraComponent.h" />
+    <ClInclude Include="Game\Component\ColliderComponent.h" />
+    <ClInclude Include="Game\Component\Component.h" />
+    <ClInclude Include="Game\Component\ComponentTickHandler.h" />
+    <ClInclude Include="Game\Component\HealthComponent.h" />
+    <ClInclude Include="Game\Component\MeshComponent.h" />
+    <ClInclude Include="Game\Component\OverlapComponent.h" />
+    <ClInclude Include="Game\Component\ParticleSystemComponent.h" />
+    <ClInclude Include="Game\Component\RigidBodyComponent.h" />
+    <ClInclude Include="Game\Component\RotatingComponent.h" />
+    <ClInclude Include="Game\Component\ScriptComponent.h" />
+    <ClInclude Include="Game\Component\TransformComponent.h" />
+    <ClInclude Include="Game\Component\UIComponent.h" />
+    <ClInclude Include="Game\Entity.h" />
+    <ClInclude Include="Game\EntityRegister.h" />
+    <ClInclude Include="Game\GameUI.h" />
+    <ClInclude Include="Game\GameWorld.h" />
+    <ClInclude Include="Game\Item.h" />
+    <ClInclude Include="Game\ParticleSystem.h" />
+    <ClInclude Include="Game\PlayerController.h" />
+    <ClInclude Include="Graphics\BufferUtils.h" />
+    <ClInclude Include="Graphics\Framebuffer.h" />
+    <ClInclude Include="Graphics\Renderer\ChunkRenderer.h" />
+    <ClInclude Include="Graphics\Renderer\MeshRenderer.h" />
+    <ClInclude Include="Graphics\Renderer\ParticleRenderer.h" />
+    <ClInclude Include="Graphics\Renderer\Renderer.h" />
+    <ClInclude Include="Graphics\Shader.h" />
+    <ClInclude Include="Graphics\StandardMesh.h" />
+    <ClInclude Include="Graphics\Texture.h" />
+    <ClInclude Include="Graphics\UI\UIElement.h" />
+    <ClInclude Include="Graphics\VertexBatcher.h" />
+    <ClInclude Include="Graphics\VertexMesh.h" />
+    <ClInclude Include="Physics\ChunkPhysics.h" />
+    <ClInclude Include="Physics\IntersectionTests.h" />
+    <ClInclude Include="Sandbox\TestApp.h" />
+    <ClInclude Include="Sandbox\VoxyApp.h" />
+    <ClInclude Include="Utility\EventDispatcher.h" />
+    <ClInclude Include="Utility\FastNoiseLite.h" />
+    <ClInclude Include="Utility\FileIO.h" />
+    <ClInclude Include="Utility\GameController.h" />
+    <ClInclude Include="Utility\KeyboardController.h" />
+    <ClInclude Include="Utility\MathUtility.h" />
+    <ClInclude Include="Utility\ShaderLibrary.h" />
+    <ClInclude Include="Utility\TextureLibrary.h" />
+    <ClInclude Include="Utility\ThreadRunnable.h" />
+    <ClInclude Include="Utility\TickDispatcher.h" />
+    <ClInclude Include="World\Biome.h" />
+    <ClInclude Include="World\Block.h" />
+    <ClInclude Include="World\Chunk.h" />
+    <ClInclude Include="World\ChunkManager.h" />
+    <ClInclude Include="World\ChunkMap.h" />
+    <ClInclude Include="World\Generator.h" />
+    <ClInclude Include="World\WorldGenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Game\Component\ComponentTickHandler.inl" />
+    <None Include="Game\Component\ScriptComponent.inl" />
+    <None Include="Game\Entity.inl" />
+    <None Include="Game\EntityRegister.inl" />
+    <None Include="Graphics\VertexBatcher.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

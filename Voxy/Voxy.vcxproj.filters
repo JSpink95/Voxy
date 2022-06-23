@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="AppWindow.cpp" />
+    <ClCompile Include="Graphics\BufferUtils.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\VertexMesh.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Shader.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\FileIO.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\MathUtility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Chunk.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Generator.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldGenerator.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\ChunkMap.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Entity.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Components.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Biome.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\ThreadRunnable.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="World\ChunkManager.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayerController.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\IntersectionTests.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\ChunkPhysics.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\GameController.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Texture.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Block.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\KeyboardController.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\BlockInteractor.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\TextureLibrary.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\StandardMesh.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\UI\UIElement.cpp">
+      <Filter>Graphics\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameUI.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ParticleSystem.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\ShaderLibrary.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\TickDispatcher.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameWorld.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderer\Renderer.cpp">
+      <Filter>Graphics\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderer\ParticleRenderer.cpp">
+      <Filter>Graphics\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderer\ChunkRenderer.cpp">
+      <Filter>Graphics\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\EntityRegister.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\TransformComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\CameraComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\RigidBodyComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\ColliderComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\HealthComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\ParticleSystemComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\ScriptComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\UIComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\ComponentTickHandler.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\MeshComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderer\MeshRenderer.cpp">
+      <Filter>Graphics\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\RotatingComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Item.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Framebuffer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sandbox\TestApp.cpp">
+      <Filter>Sandbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Sandbox\VoxyApp.cpp">
+      <Filter>Sandbox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppWindow.h" />
+    <ClInclude Include="CoreTypes.h" />
+    <ClInclude Include="Graphics\BufferUtils.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\VertexMesh.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Shader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\FileIO.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\MathUtility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Chunk.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\FastNoiseLite.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Generator.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldGenerator.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\ChunkMap.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameWorld.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Components.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Biome.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\ThreadRunnable.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="World\ChunkManager.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerController.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\IntersectionTests.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\ChunkPhysics.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\VertexBatcher.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\GameController.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Texture.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Block.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\KeyboardController.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\EventDispatcher.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\BlockInteractor.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\TextureLibrary.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\StandardMesh.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\UI\UIElement.h">
+      <Filter>Graphics\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameUI.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ParticleSystem.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\ShaderLibrary.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\TickDispatcher.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderer\Renderer.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderer\ParticleRenderer.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderer\ChunkRenderer.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\EntityRegister.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\TransformComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\CameraComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\Component.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\RigidBodyComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\ColliderComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\HealthComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\ParticleSystemComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\ScriptComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\UIComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\ComponentTickHandler.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\MeshComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderer\MeshRenderer.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\RotatingComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\OverlapComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Item.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Framebuffer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sandbox\TestApp.h">
+      <Filter>Sandbox</Filter>
+    </ClInclude>
+    <ClInclude Include="Sandbox\VoxyApp.h">
+      <Filter>Sandbox</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{16b3405e-3c39-4dda-a276-4ce63258bcb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{317a2a20-f1d7-468b-86b0-85f0dc252636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{6c5dfbf4-959f-40a5-82fe-e4a3bf5f4991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{2729a428-234e-4dcc-9129-5fb2eac72a3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{2344b87e-668c-4188-a4be-efc20dd4d9b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\UI">
+      <UniqueIdentifier>{5cfb2797-7b42-47c5-b99b-b6d6f40aa39a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderer">
+      <UniqueIdentifier>{bcbffd03-c054-48d9-b9c5-c14fb5788e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component">
+      <UniqueIdentifier>{75583e84-a545-4740-b872-8ff4a04b722e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sandbox">
+      <UniqueIdentifier>{243949ff-daa6-48d9-a7ba-8ee28e14d1f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graphics\VertexBatcher.inl">
+      <Filter>Graphics</Filter>
+    </None>
+    <None Include="Game\Entity.inl">
+      <Filter>Game</Filter>
+    </None>
+    <None Include="Game\EntityRegister.inl">
+      <Filter>Game</Filter>
+    </None>
+    <None Include="Game\Component\ScriptComponent.inl">
+      <Filter>Game\Component</Filter>
+    </None>
+    <None Include="Game\Component\ComponentTickHandler.inl">
+      <Filter>Game\Component</Filter>
+    </None>
+  </ItemGroup>
+</Project>

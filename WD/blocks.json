@@ -1,0 +1,30 @@
+{
+  "dirt": {
+    "id": 0,
+    "config": {
+      "hardness": 50.0,
+      "textures": [ "textures\\dirt.png", "textures\\dirt.png", "textures\\dirt.png" ]
+    }
+  },
+  "grass": {
+    "id": 1,
+    "config": {
+      "hardness": 60.0,
+      "textures": [ "textures\\dirt.png", "textures\\grass_side.png", "textures\\grass.png" ]
+    }
+  },
+  "stone": {
+    "id": 2,
+    "config": {
+      "hardness": 100.0,
+      "textures": [ "textures\\stone.png", "textures\\stone.png", "textures\\stone.png" ]
+    }
+  },
+  "sand": {
+    "id": 3,
+    "config": {
+      "hardness": 70.0,
+      "textures": [ "textures\\sand.png", "textures\\sand.png", "textures\\sand.png" ]
+    }
+  }
+}
