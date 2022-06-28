@@ -67,8 +67,11 @@ void PlayerController::OnButtonReleased(GameControllerButton button)
 void PlayerController::SetupController(Reference<GameController> controller)
 {
 	this->controller = controller;
-	controller->SubscribeListener_ButtonPressed(this);
-	controller->SubscribeListener_ButtonReleased(this);
+	if (controller)
+	{
+		controller->SubscribeListener_ButtonPressed(this);
+		controller->SubscribeListener_ButtonReleased(this);
+	}
 }
 
 void PlayerController::Update(f32 deltaTime)
